@@ -30,11 +30,11 @@
 }
 
 #navigation p {
-      display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 20%;
-  font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .highlight {
@@ -72,7 +72,7 @@ h3 {
     padding-left: 24px;
     padding-right: 24px;
 }
-p{
+p {
     font-family: 'Source Sans Pro', sans-serif;
     color: #FCFAE6;
     padding-left: 24px;
@@ -129,8 +129,8 @@ a:hover {
 .skillGrid {
     margin: 12px 5%;
     display: grid;
-    grid-template-rows: 400px 400px 400px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 420px 420px 420px;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
         "projectImg1 ux"
         "projectImg2 ui"
@@ -141,11 +141,11 @@ a:hover {
 .skillGridArea {
     display: grid;
     align-content: end;
-    margin: 50px;
+    margin-block-end: 36px;
     border-radius: 24px;
     border: 2px solid #1E2431;
 }
-
+/*I want my images to sit to the left of the text, but it doesnt show how I want it when I place it here and also <imc src> in html. Help!*/
 .projectImg1 {
     grid-area: projectImg1;
     background-image: url("../images/user_research_cropped.png");
