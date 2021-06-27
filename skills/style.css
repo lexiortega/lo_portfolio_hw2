@@ -1,0 +1,212 @@
+/*Navigation CSS*/
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.logo {
+    width: 8%;
+    align-items: center;
+}
+
+#navBar h1 {
+    width: 25%;
+    font-weight: 500;
+}
+
+#navigation {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navSpace {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%; 
+}
+
+#navigation p {
+      display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.highlight {
+    color:#FF9153;
+    font-weight: 700;
+}
+
+/*Typography CSS*/
+.sectionTitle {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    color: #FFFDCB;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 24px;
+}
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    color: #FCFAE6;
+}
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-variant: small-caps;
+    font-size: 48px;
+    margin-top: 12px;
+    color: #FCFAE6;
+    text-align: center;
+}
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    text-align: right;
+}
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FCFAE6;
+}
+
+/*Background CSS*/
+body {
+    background-color: #252D3D;
+}
+
+/*Button + Anchor CSS*/
+button {
+    padding: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: rgb(30, 36, 49,0.40); /* my black */
+    border-radius: 8px;
+    border: 2px solid #ffffff;
+    transition-duration: 0.4s;
+    display: inline-block; /*I cant get my buttons to align center. I did some research and tried a bunch of different things and nothing worked- help?*/
+}
+
+button:hover{
+    background-color: #FF9153; /* nara */
+  color: white;
+  display: inline-block;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #FCFAE6;
+    text-decoration: none;
+}
+  
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+  a:active {
+    color: #FCFAE6;
+    text-decoration: none;
+}
+
+/*Main Section CSS*/
+.contentFrame {
+    background-color: rgb(30, 36, 49, 0.85);
+    padding: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.skillGrid {
+    margin: 20px 5%;
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "ux ui gd"
+        "ux ui gd"
+    ;
+}
+
+.skillGridArea {
+    display: grid;
+    align-content: end;
+    margin: 8px;
+    border-radius: 24px;
+    border: 2px solid #1E2431;
+}
+
+#ux {
+    grid-area: ux;
+    background-image: url("../images/user_research_cropped.png");
+}
+
+#ui {
+    grid-area: ui;
+    background-image: url("../images/user_research.png");
+}
+
+#gd {
+    grid-area: gd;
+    background-image: url("../images/user_research.png");
+}
+
+/*Footer CSS*/
+#footerBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+#footerBar h1 {
+    width: 25%;
+    font-weight: 500;
+}
+
+#footerMore p {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 175%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#footerSpace {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%; 
+}
+
+/* RWD @ media tags*/
+@media only screen and (max-width: 1000px) {
+    #navigation {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #sectionTitle {
+        position: static;
+        margin: 20px;
+    }
+    #skillGrid {
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "ux"
+            "ui"
+            "gd"
+        ;
+    }
+}
